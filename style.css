@@ -7,13 +7,13 @@ body {
 
 
 #container {
-    width: 400px;
+    width: 420px;
     background-color: lightgrey;
     border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(100px, auto) repeat(5, 80px);
-    gap: 2px;
+    gap: 1%;
     margin: 0 auto;
     padding: 10px;
     padding-bottom: 30px;
@@ -65,7 +65,7 @@ button:hover {
 }
 
 #addition {
-    height: 196%
+    height: 200%
 }
 
 
@@ -90,4 +90,8 @@ button:hover {
 .delete {
     background-color: rgb(138, 157, 233);
 
+}
+
+button:nth-child(13) {
+    font-size: 45px;
 }

@@ -101,9 +101,9 @@ function calculate() {
         previousValue += currentValue;
     } else if (operatorValue === "-") {
         previousValue -= currentValue;
-    } else if (operatorValue === "*") {
+    } else if (operatorValue === "×") {
         previousValue *= currentValue;
-    } else if (operatorValue === "/") {
+    } else if (operatorValue === "÷") {
         previousValue /= currentValue;
     } else if (operatorValue === "^") {
         previousValue = Math.pow(previousValue, currentValue)
