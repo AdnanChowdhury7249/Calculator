@@ -54,17 +54,14 @@ operatorbtns.forEach((opr) => {
 function handleOperator(opr) {
     if (previousValue === "") {
         previousValue = currentValue;
-        operatorCheck(opr);
-    } else if (currentValue === "") {
-        operatorCheck(opr);
-    } else {
+    } else if (currentValue !== "") {
         calculate();
-        operatorValue = opr;
-        displayCurrent.textContent = "0";
-        displayPrevious.textContent = previousValue + " " + operatorValue;
+        displayCurrent.textContent = previousValue;
     }
+    operatorValue = opr;
+    displayPrevious.textContent = previousValue + " " + operatorValue;
+    currentValue = "";
 }
-
 
 function operatorCheck(text) {
     operatorValue = text;
